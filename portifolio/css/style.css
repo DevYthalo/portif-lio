@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(3, 37, 39, 0.836);
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition-duration: 0.5s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(0, 194, 253);
+}
+
+.home {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 100%;
+    background-color: aqua;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(2) {
+    background-color: transparent;
+    color: aqua;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.redes-sociais a i {
+    padding: 17px;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    margin: 0 5px;
+    background-color: aqua;
+}
+
+.redes-sociais a i:hover {
+    background-color: rgb(39, 124, 158);
+    color: white;
+}
